@@ -19,8 +19,6 @@ class Item(Resource):
    
     @jwt_required()
     def get(self, name):
-        data = Item.parser.parse_args()
-        print(data)
         item = ItemModel.find_by_name(name)
         if item:
             return item.json()
