@@ -8,8 +8,7 @@ curl --location --request POST 'http://127.0.0.1:5000/register' \
 --data-raw '{
     "username": "tharun",
     "password": "networks"
-}' \
-
+}' 
 
 #make the user login
 #POST USER (login)
@@ -20,12 +19,6 @@ curl --location --request POST 'http://127.0.0.1:5000/auth' \
     "username": "tharun",
     "password": "networks"
 }'
-
-
-# result=$(curl --location --request POST 'http://127.0.0.1:5000/auth' --header 'Content-Type: application/json' --data-raw '{"username": "tharun","password": "networks"}')
-
-# #myvar1=$( echo $result | jq --raw-output '.access_token' )
-# echo “$result”
 
 #make the store
 #POST STORE
@@ -51,11 +44,6 @@ curl --location --request POST 'http://127.0.0.1:5000/item/phone' \
     "price": 15.99,
     "store_id": 1
 }'
-
-#get a particular item and its details
-GET ITEM
-curl --location --request GET 'http://127.0.0.1:5000/item/table' \
---header 'Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6MSwiaWF0IjoxNjAxNzIzMjM0LCJuYmYiOjE2MDE3MjMyMzQsImV4cCI6MTYwMTcyMzUzNH0.slq-cAovvlEhJXtt7JthMyUjw2dLE5YJqXzlgM7UnRs'
 
 #use put to update the table's price
 #PUT ITEM
