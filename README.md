@@ -1,10 +1,10 @@
 # flask-api
 
-# This is a flask api, that a manager in a retail company can use.
+ This is a flask api, that a manager in a retail company can use.
 
-## The manager can register and then login.
+ The manager can register and then login.
 
-## He/She can create different stores, then post items to those stores, update the details of the items, and  delete the items and stores
+ He/She can create different stores, then post items to those stores, update the details of the items, and  delete the items and stores
 
 # How to run the code:
 
